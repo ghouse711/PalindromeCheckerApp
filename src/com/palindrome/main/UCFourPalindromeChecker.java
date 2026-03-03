@@ -40,6 +40,8 @@ public class UCFourPalindromeChecker {
 		char[] chars = s.toCharArray();
 		while(start<end) {
 			if(chars[start]!=chars[end]) return false;
+			start ++;
+			end--;
 		}
 		return true;
 	}
